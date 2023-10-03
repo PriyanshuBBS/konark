@@ -1,0 +1,59 @@
+#about-banner{
+    display: flex;
+    background-image: url(logo/banner.jpg);
+    background-size: cover;
+    height: 36vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-banner h3{
+    color: white;
+    font-size: 40px;
+}
+
+#about-banner p {
+    color: rgb(255 255 255);
+    font-size: 14px;
+}
+
+#about-section{
+    padding: 40px 80px;
+}
+
+#about-section #heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+
+#about-section .desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-section .left-section{
+    width: 60%;
+    line-height: 2;
+    padding: 20px;
+}
+
+#about-section img{
+    width: 33vw;
+}
+
+#about-section .right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
