@@ -1,0 +1,18 @@
+#contact-banner{
+    display: flex;
+    background-image: url(img/contact/banner.jpg);
+    background-size: cover;
+    height: 36vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-banner h3{
+    color: white;
+    font-size: 60px;
+}
+
+#contact-banner p {
+    color: rgb(255 255 255);
+    font-size: 30px;
+}
