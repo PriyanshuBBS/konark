@@ -1,6 +1,8 @@
 #contact-banner{
     display: flex;
-    background-image: url(img/contact/banner.jpg);
+
+
+    background-image: url(assets/contact/banner-back.jpg);
     background-size: cover;
     height: 36vh;
     align-items: center;
@@ -8,11 +10,103 @@
 }
 
 #contact-banner h3{
-    color: white;
-    font-size: 60px;
+    color: black;
+    font-size: 40px;
 }
 
+
 #contact-banner p {
-    color: rgb(255 255 255);
-    font-size: 30px;
+    padding: 10px 0;
+    color: black;
+    font-size: 14px;
 }
+
+#contact-header{
+    padding: 80px 20px;
+}
+
+#contact-header img{
+    width: 100px;
+}
+
+#contact-header p{
+    color: black;
+    font-size: 20px;
+    padding: 21px 0 ;
+}
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+#contact-form{
+  font-family: "Poppins", sans-serif;
+}
+
+#contact-form {
+  padding: 50px 20px;
+  background-color: #ebebeb;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+
+.head p{
+    color: black;
+    font-size: 15px;
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+    height: 55px;
+    width: 34%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgb(3, 3, 92);
+}
+.form button:hover {
+  background: rgb(0, 0, 0);
+}
+

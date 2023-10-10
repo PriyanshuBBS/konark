@@ -1,0 +1,73 @@
+#project-banner{
+    display: flex;
+
+
+    background-image: url(assets/project/banner.jpg);
+    background-size: cover;
+    height: 36vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-banner h3{
+    color: white;
+    font-size: 40px;
+}
+
+
+#project-banner p {
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+}
+
+#section-1{
+    height: 100vh;
+    padding: 50px 20px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: rgb(1, 1, 61);
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th {
+    padding: 12px 15px;
+}
+
+.styled-table td {
+    padding: 2px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(1, 1, 61);
+}
+
+.styled-table tbody tr:hover{
+    color: rgb(0, 0, 117);
+    cursor: pointer;
+}
+
+#section-1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
