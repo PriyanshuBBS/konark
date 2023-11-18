@@ -3,7 +3,7 @@
     background-image: url(logo/banner.jpg);
     background-size: cover;
     height: 36vh;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -14,7 +14,23 @@
     flex-direction: column;
 }
 
+#apart-2{
+    width: 110px;
+}
+
+#apart-3{
+    width: 110px;
+}
+
+#apart-4{
+    width: 110px;
+}
+
+#apart-1{
+    width: 110px;
+}
 #about-banner h3{
+    padding-top: 60px;
     color: white;
     font-size: 40px;
 }
@@ -46,10 +62,12 @@
     width: 60%;
     line-height: 2;
     padding: 20px;
+    font-size: 20px;
 }
 
 #about-section img{
     width: 33vw;
+    border-radius: 15px;
 }
 
 #about-section .right-section{
@@ -61,7 +79,16 @@
 
 .unique{
     padding: 50px 50px;
-    background-color: #e9e9e9;
+}
+
+.unique img:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+#services{
+    background-color: rgb(216, 216, 216);
+    padding: 50px 80px;
 }
 
 #setapart {
@@ -114,8 +141,7 @@
 
 /* Our Team */
 .working {
-    padding: 0 50px;
-    padding-top: 50px;
+    margin: 50px 50px;
 }
 
 .working #head{
@@ -128,21 +154,35 @@
     width: 150px;
 }
 
-.working .team{
+.working .team {
     display: flex;
     padding: 40px 10px;
     justify-content: space-evenly;
+    height: 25vw;
 }
 
+.working .team-member img
+{
+    border-radius: 10px;
+}
 .working .team-member {
     display: flex;
     flex-direction: column;
-    height: 40vh;
-    width: 18vw;
+    width: 27vw;
     align-items: center;
 }
 
 .working .team-member span{
-    margin: 20px 0;
+    margin: 20px 0 0 0;
+    font-size: 30px;
+}
+
+.working .team-member h2{
     font-size: 20px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.working .team-member p{
+    font-size: 15px;
 }

@@ -5,11 +5,12 @@
     background-image: url(assets/project/banner.jpg);
     background-size: cover;
     height: 36vh;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 #project-banner h3{
+    padding-top: 60px;
     color: white;
     font-size: 40px;
 }
@@ -51,6 +52,7 @@
 
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
+    height: 6vh;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
@@ -62,7 +64,7 @@
 }
 
 .styled-table tbody tr:hover{
-    color: rgb(0, 0, 117);
+    color: rgb(68, 68, 182);
     cursor: pointer;
 }
 
@@ -70,4 +72,5 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: 350vh;
 }

@@ -1,0 +1,22 @@
+#gallery-banner {
+    display: flex;
+    background-image: url(img/gallery-banner.jpg);
+    background-size: cover;
+    height: 36vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#gallery-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gallery-banner h3 {
+    color: white;
+    font-size: 40px;
+    padding-top: 60px;
+}
+

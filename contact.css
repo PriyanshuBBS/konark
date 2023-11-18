@@ -1,16 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 #contact-banner{
     display: flex;
 
 
-    background-image: url(assets/contact/banner-back.jpg);
+    background-image: url(img/contact-banner.jpg);
     background-size: cover;
     height: 36vh;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 #contact-banner h3{
-    color: black;
+    color: white;
+    padding-top: 60px;
     font-size: 40px;
 }
 
@@ -42,8 +48,8 @@
 }
 
 #contact-form {
-  padding: 50px 20px;
-  background-color: #ebebeb;
+  padding: 50px 80px;
+  background-color: #ffffff;
 }
 .head{
     display: flex;
@@ -61,16 +67,17 @@
     width: 30vw;
 }
 
-.input-box label {
-  color: #333;
+.input-box{
+  width: 32vw;
 }
+
 .form :where(.input-box input, .select-box) {
   position: relative;
   height: 50px;
   width: 100%;
   outline: none;
   font-size: 1rem;
-  color: #ffffff;
+  color: #000000;
   margin-top: 8px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -90,17 +97,17 @@
   width: 100%;
   outline: none;
   border: none;
-  color: #707070;
+  color: #a5a5a5;
   font-size: 1rem;
 }
 .form button {
-    height: 55px;
-    width: 34%;
+    height: 45px;
+    width: 24%;
     border-radius: 10px;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 10px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -110,3 +117,46 @@
   background: rgb(0, 0, 0);
 }
 
+#textarea{
+  margin-top: 15px;
+}
+
+#reach {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 80px;
+  background-color: rgb(232, 232, 232);
+  height: 50vh;
+}
+
+#reach h3{
+  font-size: 35px;
+  padding: 15px 0;
+}
+
+#reach i{
+  color: rgb(0, 0, 67);
+}
+
+#reach span{
+  color: rgb(0, 0, 67);
+}
+#reach #branch{
+  padding-top: 50px;
+}
+
+.form-data{
+  display: flex;
+  flex-direction: row;
+}
+
+#forms{
+  display: flex;
+  align-items: center;
+}
+.maps{
+  width: 30vw;
+  margin-left: 20vw;
+}

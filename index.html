@@ -7,6 +7,71 @@
     <script src="https://kit.fontawesome.com/0a65a82969.js" crossorigin="anonymous"></script>
     <title>Konark Fire Solutions | Leading Fire and Plumbing Solutions</title>
     <link rel="stylesheet" href="index.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- Counting -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <!-- Scroll Reveal JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="index.js"></script>
+    <!-- Demo styles -->
+    <style>
+        .projectbody {
+            position: relative;
+            height: 30vh;
+            background: #ffffff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .projectbody img {
+            width: 20px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45vh;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .projectbody {
+            height: 50vh;
+        }
+
+        .projects button {
+            background-color: rgb(118, 7, 7);
+            color: white;
+            padding: 2px 5px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -25,20 +90,35 @@
             <i class="fa-solid fa-envelope"></i>
             <li>services@konarkfiresolutions.com</li>
         </ul>
+
+        <ul class="top-items">
+            <a href="https://twitter.com/KonarkFireSoln"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61553130869707"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/konark-fire-solutions-b2ba64299/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </ul>
     </section>
 
     <section id="header">
-        <a href="#"><img src="log.png" alt="" id="logo"></a>
+        <a href="#"><img src="img/home/konark logo.png" alt="" id="logo"></a>
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">HOME</a></li>
-                <li><a href="#">PROJECTS</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="#">SERVICES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
             </ul>
         </div>
-        <a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+        <div class="wrap">
+            <div class="search">
+
+                <i class="fa fa-search"></i>
+
+            </div>
+        </div>
     </section>
 
     <section id="banner">
@@ -49,13 +129,13 @@
                 <input type="radio" name="radio-btn" id="radio3">
 
                 <div class="slide first">
-                    <img src="img1.jpg" alt="">
+                    <img src="img/home/img1.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <img src="img2.jpg" alt="">
+                    <img src="img/home/img2.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <img src="img3.jpg" alt="">
+                    <img src="img/home/img3.jpg" alt="">
                 </div>
 
                 <!-- Auto nav start -->
@@ -77,21 +157,52 @@
     <section id="clients">
         <div id="heading">Clients</div>
         <div class="logos">
-            <div class="logos-slide">
-                <img src="logo/logo3.png" alt="">
-                <img src="logo/logo1.png" alt="">
-                <img src="logo/logo4.png" alt="">
-                <img src="logo/logo5.png" alt="">
-                <img src="logo/logo6.png" alt="">
-                <img src="logo/logo2.png" alt="">
-                <img src="logo/logo7.png" alt="">
-                <img src="logo/logo13.png" alt="">
-                <img src="logo/logo9.png" alt="">
-                <img src="logo/logo10.png" alt="">
-                <img src="logo/logo11.png" alt="">
-                <img src="logo/logo12.png" alt="">
-                <img src="logo/logo8.png" alt="">
-            </div>
+            <a href="https://www.adaniagrilogistics.com/" target="_blank"><img src="img/logo/adani.png" alt=""
+                    width="100px"></a>
+            <a href="https://indianairforce.nic.in/" target="_blank"><img src="img/logo/airforce.png" alt=""
+                    width="100px"></a>
+            <a href="https://ambiencegroup.in/" target="_blank"><img src="img/logo/ambience.png" alt=""
+                    width="120px"></a>
+            <a href="https://www.brahmakumaris.com/" target="_blank"><img src="img/logo/bk.png" alt=""
+                    width="120px"></a>
+            <a href="https://www.delhimetrorail.com/" target="_blank"><img src="img/logo/dmrc.png" alt=""
+                    width="100px"></a>
+            <a href="https://www.escortsgroup.com/" target="_blank"><img src="img/logo/escorts.png" alt=""
+                    width="80px"></a>
+            <a href="https://www.fortunehotels.in/" target="_blank"><img src="img/logo/fortune.png" alt=""
+                    width="100px"></a>
+            <a href="https://fws.co.in/" target="_blank"><img src="img/logo/fws.png" alt="" width="80px"></a>
+            <a href="https://himachal.nic.in/en-IN/" target="_blank"><img src="img/logo/himachal.png" alt=""
+                    width="100px"></a>
+            <a href="https://www.hyundai.com/in/en" target="_blank"><img src="img/logo/hyundai.png" alt=""
+                    width="100px"></a>
+            <a href="https://www.thelalit.com/" target="_blank"><img src="img/logo/lalit.png" alt="" width="100px"></a>
+            <img src="img/logo/maxroyal.png" alt="" width="100px">
+            <a href="https://mcdindia.com/" target="_blank"><img src="img/logo/mcd.png" alt="" width="100px"></a>
+
+        </div>
+
+        <div class="logos log-2">
+            <a href="https://www.epackpetrochem.com/" target="_blank"><img src="img/logo/epack.jpg" alt=""
+                    width="100px"></a>
+            <a href="https://www.joinindiannavy.gov.in/" target="_blank"><img src="img/logo/navy.png" alt=""
+                    width="120px"></a>
+            <a href="https://www.ntpc.co.in/" target="_blank"><img src="img/logo/ntpc.png" alt="" width="100px"></a>
+            <a href="https://odisha.gov.in/" target="_blank"><img src="img/logo/odisha.png" alt="" width="80px"></a>
+            <a href="https://sunpharma.com/" target="_blank"><img src="img/logo/ranbaxy.png" alt="" width="100px"></a>
+            <a href="https://www.renault.co.in/" target="_blank"><img src="img/logo/renault.png" alt=""
+                    width="80px"></a>
+            <a href="https://snowman.in/" target="_blank"><img src="img/logo/snowman.png" alt="" width="100px"></a>
+            <a href="https://www.starbucks.in/" target="_blank"><img src="img/logo/starbucks.png" alt=""
+                    width="100px"></a>
+            <a href="https://sunshivbotanics.com/" target="_blank"><img src="img/logo/sunshiv.png" alt=""
+                    width="120px"></a>
+            <a href="https://uk.gov.in/" target="_blank"><img src="img/logo/uk.png" alt="" width="80px"></a>
+            <a href="https://www.tivolibanquets.com/" target="_blank"><img src="img/logo/tivoli.png" alt=""
+                    width="100px"></a>
+            <a href="https://www.tecumseh.com/" target="_blank"><img src="img/logo/tschuch.png" alt="" width="80px"></a>
+            <a href="https://www.whirlpoolindia.com/" target="_blank"><img src="img/logo/whirlpool.png" alt=""
+                    width="100px"></a>
         </div>
     </section>
 
@@ -138,18 +249,18 @@
         </div>
 
         <div id="pro-spans-div">
-            <span id="pro-spans">CURRENT</span>
+            <span id="pro-spans">ONGOING PROJECTS</span>
+            <button id="myButton-1">All Projects</button>
         </div>
 
-
-        <div class="progress">
+        <div class="ongoing progress" id="ongoing">
             <div class="pro-container">
                 <div class="pro">
                     <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/pro1.jpg" alt="">
+                    <img src="img/home/pro1.jpg" alt="">
                     <div class="des">
-                        <h3>Air Force Station</h3>
-                        <h4>Lucknow, Uttar Pradesh</h4>
+                        <h3>Air Force Base</h3>
+                        <h4>Lucknow, Uttar Prades</h4>
                     </div>
                 </div>
             </div>
@@ -157,21 +268,10 @@
             <div class="pro-container">
                 <div class="pro">
                     <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/pro3.jpg" alt="">
-                    <div class="des">
-                        <h3>E Pack Warehouse</h3>
-                        <h4>Bharuch, Gujarat</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pro-container">
-                <div class="pro">
-                    <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/pro2.png" alt="">
+                    <img src="img/home/pro2.png" alt="">
                     <div class="des">
                         <h3>FWS Warehouse</h3>
-                        <h4>Dwarka, Delhi</h4>
+                        <h4>Goyla, Delhi</h4>
                     </div>
                 </div>
             </div>
@@ -179,95 +279,249 @@
             <div class="pro-container">
                 <div class="pro">
                     <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/pro4.jpg" alt="">
+                    <img src="img/home/pro5.jpeg" alt="">
                     <div class="des">
-                        <h3>Brahma Kumari Retreat Center</h3>
-                        <h4>Gurugram, Haryana</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pro-container">
-                <div class="pro">
-                    <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/pro5.jpeg" alt="">
-                    <div class="des">
-                        <h3>District Hospital</h3>
+                        <h3>Government District Hospital</h3>
                         <h4>Ganjam, Odisha</h4>
                     </div>
                 </div>
             </div>
+
+
+            <div class="pro-container">
+                <div class="pro">
+                    <!-- <img src="img/products/f1.jpg" alt=""> -->
+                    <img src="img/home/pro4.jpg" alt="">
+                    <div class="des">
+                        <h3>Brahma Kumari's Centre</h3>
+                        <h4>Gurugram, Haryana</h4>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="completed-progress2">
+            <div class="pro-container">
+                <div class="pro">
+                    <!-- <img src="img/products/f1.jpg" alt=""> -->
+                    <img src="img/home/snowman.jpeg" alt="">
+                    <div class="des">
+                        <h3>Snowman Cold Storage</h3>
+                        <h4>Coimbatore, Tamil Nadu</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-container">
+                <div class="pro">
+                    <!-- <img src="img/products/f1.jpg" alt=""> -->
+                    <img src="img/home/epack.jpg" alt="">
+                    <div class="des">
+                        <h3>EPACK PetroChem Plant</h3>
+                        <h4>Dahej, Gujarat</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-container">
+                <div class="pro">
+                    <!-- <img src="img/products/f1.jpg" alt=""> -->
+                    <img src="img/home/sunshiv.jpg" alt="">
+                    <div class="des">
+                        <h3>Sunshiv Botanics</h3>
+                        <h4>Palwal, Haryana</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="pro-spans-div">
             <span id="pro-spans">COMPLETED</span>
-        </div>
-        <div class="completed progress">
-            <div class="pro-container">
-                <div class="pro">
-                    <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/comp1.jpg" alt="">
-                    <div class="des">
-                        <h3>McDonald's</h3>
-                        <h4> Jalandhar, Punjab</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pro-container">
-                <div class="pro">
-                    <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/comp2.jpg" alt="">
-                    <div class="des">
-                        <h3>Shri Manjunatha Temple</h3>
-                        <h4>Dharmsthala, Karnatka</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pro-container">
-                <div class="pro">
-                    <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/comp3.jpg" alt="">
-                    <div class="des">
-                        <h3>Modern ISBT</h3>
-                        <h4>Shimla, Himachal Pradesh</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pro-container">
-                <div class="pro">
-                    <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/comp5.jpg" alt="">
-                    <div class="des">
-                        <h3>National Brain Research Center</h3>
-                        <h4>Manesar, Haryana</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pro-container">
-                <div class="pro">
-                    <!-- <img src="img/products/f1.jpg" alt=""> -->
-                    <img src="logo/comp6.jpg" alt="">
-                    <div class="des">
-                        <h3>The Lalit Hotel</h3>
-                        <h4>Khajuraho, Madhya Pradesh</h4>
-                    </div>
-                </div>
-            </div>
+            <button id="myButton">All Projects</button>
         </div>
 
 
+        <div class="projectbody">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/isbt.jpg" alt="">
+                                <div class="des">
+                                    <h3>Modern ISBT</h3>
+                                    <h4>Shimla, Himachal</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/manju.jpg" alt="">
+                                <div class="des">
+                                    <h3>Shri Manjunatha Temple</h3>
+                                    <h4>Dharmsthala, Karnatka</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/mcd.jpg" alt="">
+                                <div class="des">
+                                    <h3>McDonald's</h3>
+                                    <h4> Jalandhar, Punjab</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/nbrc.jpg" alt="">
+                                <div class="des">
+                                    <h3>National Brain Research Center</h3>
+                                    <h4>Manesar, Haryana</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/lalit.jpg" alt="">
+                                <div class="des">
+                                    <h3>The Lalit Hotel</h3>
+                                    <h4>Khajuraho, Madhya Pradesh</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/escorts.jpg" alt="">
+                                <div class="des">
+                                    <h3>Escorts India Limited</h3>
+                                    <h4>Faridabad, Haryana</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/dmrc.jpg" alt="">
+                                <div class="des">
+                                    <h3>DMRC Commerical Centre</h3>
+                                    <h4>Pitampura, New Delhi</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <!-- <img src="img/products/f1.jpg" alt=""> -->
+                                <img src="img/home/adani.jpg" alt="">
+                                <div class="des">
+                                    <h3>Adani Agro Logistics</h3>
+                                    <h4>Kannauj, Uttar Pradesh</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
 
     </section>
 
+    <section class="uniques">
+        <div class="apart">
+            <h2>Achievements</h2>
+
+            <p>We have been awarded the best Industrial developer in India and we continue to strive for innovation and
+                excellence in what we do. One of the pioneers in its space, Konark Fire Solutions has provided space for
+                India’s largest
+                publishing house.</p>
+        </div>
+        <div class="counter">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h2 data-max="30">+</h2>
+                        <span>Experience</span>
+                    </div>
+                    <div class="col-sm-3">
+                        <h2 data-max="30">+ </h2>
+                        <span>Cities</span>
+                    </div>
+                    <div class="col-sm-3">
+                        <h2 data-max="60">+</h2>
+                        <span>Projects</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="india">
+                <img src="img/home/india.png" alt="" width="180px">
+            </div>
+        </div>
+    </section>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="new.js"></script>
+
+    <section class="gallery">
+        <div class="head">Gallery</div>
+
+        <div class="fire">
+            <h3>Fire Safety Systems</h3>
+            <div class="image-box">
+                <img src="img/home/Gallery/1.jpg" alt="">
+                <img src="img/home/Gallery/2.jpg" alt="">
+                <img src="img/home/Gallery/3.jpg" alt="">
+                <img src="img/home/Gallery/4.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="plumbing">
+            <h3>Plumbing & Sanitary Works</h3>
+            <div class="image-box">
+                <img src="img/home/Gallery/plum1.jpeg" alt="">
+                <img src="img/home/Gallery/plum1.jpeg" alt="">
+                <img src="img/home/Gallery/plum2.webp" alt="">
+                <img src="img/home/Gallery/plum2.webp" alt="">
+            </div>
+        </div>
+    </section>
     <footer class="section-p1">
         <div id="footer-1">
             <div class="col-first">
-                <img src="log.png" alt="">
+                <a href="index.html"><img src="img/home/konark logo light.png" alt=""></a>
                 <h3>Konark Fire Solutions Private Limited</h3>
                 <h4>Tughlakabad Extension, South Delhi, New Delhi</h4>
                 <h4>+91-9873020209, 9818039549</h4>
@@ -276,30 +530,46 @@
 
             <div class="col-second">
                 <h3>Quick Links</h3>
-                <h4>Home</h4>
-                <h4>Projects</h4>
-                <h4>Social Media</h4>
-                <h4>Gallery</h4>
+                <a href="about.html">
+                    <h4>Home</h4>
+                    <a href="about.html">
+                        <h4>Projects</h4>
+                    </a>
+                    <a href="about.html">
+                        <h4>Social Media</h4>
+                    </a>
+                    <a href="gallery.html">
+                        <h4>Gallery</h4>
+                    </a>
             </div>
 
             <div class="col-fourth">
                 <h3>Company</h3>
-                <h4>About Us</h4>
-                <h4>Contact Us</h4>
-                <h4>Services</h4>
+                <a href="about.html">
+                    <h4>About Us</h4>
+                </a>
+                <a href="contact.html">
+                    <h4>Contact Us</h4>
+                </a>
+                <a href="services.html">
+                    <h4>Services</h4>
+                </a>
             </div>
 
             <div class="col-third">
                 <h3>Follow us on</h3>
                 <div class="social">
-                    <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61553130869707"><i
+                            class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/konark-fire-solutions-b2ba64299/"><i
+                            class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://twitter.com/KonarkFireSoln"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
                 </div>
 
 
             </div>
+
+        </div>
         </div>
 
         <div id="footer-2">
@@ -319,6 +589,63 @@
             }
         }, 3000);
     </script>
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "projects.html";
+        };
+
+        document.getElementById("myButton-1").onclick = function () {
+            location.href = "projects.html";
+        };
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50
+                }
+            }
+        });
+    </script>
+
+    <!-- Scroll Reveal JS -->
+    <script>
+        //common reveal options to create reveal animations
+        ScrollReveal({
+            //reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+    </script>
+
 </body>
 
 </html>
